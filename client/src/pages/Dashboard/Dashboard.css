@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.user-dashboard{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    background:
+    radial-gradient(circle at right,
+    #b89b4d 0%,
+    #1b1b1b 45%,
+    #0d0d0d 100%);
+    font-family:sans-serif;
+}
+
+/* MAIN CONTENT */
+
+.user-main-content{
+    flex:1;
+    margin-left:260px;
+    padding:30px;
+    width:calc(100% - 260px);
+}
+
+/* TOP NAVBAR */
+
+.top-navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:30px;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.top-navbar h1{
+    font-size:36px;
+    color:white;
+    font-weight:700;
+}
+
+.top-navbar p{
+    color:#d1d5db;
+    margin-top:5px;
+}
+
+/* NAVBAR RIGHT */
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+    width:240px;
+    height:48px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    padding:0 18px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    color:white;
+}
+
+.search-bar::placeholder{
+    color:#9ca3af;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:14px;
+    background:#d4af37;
+    color:#111;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* BALANCE CARD */
+
+.balance-card{
+    background:
+    linear-gradient(135deg,#111111,#1e1e1e,#2c2c2c);
+
+    padding:35px;
+    border-radius:30px;
+    border:1px solid rgba(212,175,55,0.18);
+    margin-bottom:30px;
+}
+
+.balance-card p{
+    color:#d1d5db;
+    font-size:18px;
+}
+
+.balance-card h1{
+    margin-top:10px;
+    color:white;
+    font-size:55px;
+    word-break:break-word;
+}
+
+/* ACTIONS */
+
+.actions{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:30px;
+}
+
+/* ACTION CARD */
+
+.action-card{
+    background:rgba(255,255,255,0.05);
+    border-radius:24px;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:700;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    border:1px solid rgba(212,175,55,0.12);
+}
+
+.action-card:hover{
+    transform:translateY(-8px);
+    background:rgba(212,175,55,0.12);
+    color:#d4af37;
+}
+
+/* TRANSACTIONS */
+
+.transactions{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:30px;
+    border:1px solid rgba(212,175,55,0.12);
+}
+
+.transactions h2{
+    color:white;
+    margin-bottom:25px;
+}
+
+/* TRANSACTION */
+
+.transaction{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 0;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    gap:15px;
+}
+
+.transaction h3{
+    color:white;
+    font-size:17px;
+}
+
+.transaction p{
+    color:#9ca3af;
+    margin-top:5px;
+}
+
+/* AMOUNT COLORS */
+
+.green{
+    color:#22c55e;
+}
+
+.red{
+    color:#ef4444;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .user-dashboard{
+        flex-direction:column;
+    }
+
+    .user-main-content{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    .top-navbar h1{
+        font-size:28px;
+    }
+
+    .balance-card h1{
+        font-size:40px;
+    }
+
+    .search-bar{
+        width:100%;
+    }
+
+    .navbar-right{
+        width:100%;
+    }
+
+}

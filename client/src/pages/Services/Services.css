@@ -1,0 +1,29 @@
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+.services-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(14,165,233,0.15);
+}

@@ -1,0 +1,73 @@
+/* TRANSACTION CARD */
+
+.transaction-card{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+    border-bottom:1px solid rgba(234, 239, 157, 0.08);
+
+    transition:0.3s;
+}
+
+/* HOVER EFFECT */
+
+.transaction-card:hover{
+    transform:translateX(6px);
+}
+
+/* LEFT TEXT */
+
+.transaction-card h3{
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+    font-weight:600;
+}
+
+.transaction-card p{
+    color:#9ca3af;
+
+    margin-top:5px;
+
+    font-size:14px;
+}
+
+/* AMOUNT */
+
+.green{
+    color:#22c55e;
+
+    font-weight:700;
+
+    font-size:18px;
+}
+
+.red{
+    color:#ef4444;
+
+    font-weight:700;
+
+    font-size:18px;
+}
+
+/* DARK MODE */
+
+.dark .transaction-card{
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.dark .transaction-card h3{
+    color:white;
+}
+
+.dark .transaction-card p{
+    color:#9ca3af;
+}
