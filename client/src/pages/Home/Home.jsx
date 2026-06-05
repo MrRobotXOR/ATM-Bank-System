@@ -18,7 +18,7 @@ const Home = () => {
           <h1>
             Modern Web-Based
             <span> ATM Banking </span>
-            Experience
+            Experiences
           </h1>
 
           <p className="desc">
