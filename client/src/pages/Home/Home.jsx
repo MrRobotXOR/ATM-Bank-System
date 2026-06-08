@@ -1,8 +1,13 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./Home.css";
 
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+
+  const navigate = useNavigate();
   return (
+
     <div className="home">
 
       <Navbar />
@@ -29,8 +34,11 @@ const Home = () => {
 
           <div className="hero-buttons">
 
-            <button className="primary-btn">
-              Open Account
+            <button
+           className="primary-btn"
+            onClick={() => navigate("/register")}
+            >
+            Open Account
             </button>
 
             <button className="secondary-btn">
