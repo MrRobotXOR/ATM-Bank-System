@@ -67,7 +67,11 @@ bank-management-system/
 ├── cl/
 │   ├── src/
 │   │   ├── components/
+│   │   ├── context/
+│   │   ├── layouts/
 │   │   ├── pages/
+│   │   ├── routes/
+│   │   ├── style/
 │   │   ├── assets/
 │   │   ├── App.jsx
 │   │   └── main.jsx
