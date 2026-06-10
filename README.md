@@ -80,7 +80,7 @@ bank-management-system/
 │   ├── public/
 │   └── package.json
 │
-├── backend/
+├── server/
 │   ├── config/
 │   │   └── db.js
 │   │
