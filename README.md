@@ -75,11 +75,12 @@ bank-management-system/
 │   │   ├── assets/
 │   │   ├── App.jsx
 │   │   └── main.jsx
+│   │   └── index.css
 │   │
 │   ├── public/
 │   └── package.json
 │
-├── backend/
+├── server/
 │   ├── config/
 │   │   └── db.js
 │   │
