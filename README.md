@@ -83,21 +83,31 @@ bank-management-system/
 ├── server/
 │   ├── config/
 │   │   └── db.js
+│   │   └── env.js
+│   │   └── jwt.js
 │   │
 │   ├── controllers/
+│   │   ├── admincontroller.js
 │   │   ├── authController.js
 │   │   ├── userController.js
 │   │   └── transactionController.js
 │   │
 │   ├── middleware/
 │   │   └── authMiddleware.js
+│   │   └── adminMiddleware.js
 │   │
 │   ├── routes/
 │   │   ├── authRoutes.js
 │   │   ├── userRoutes.js
+│   │   ├── test.js
+│   │   ├── adminRoutes.js
 │   │   └── transactionRoutes.js
+│   ├── models/
+│   │   ├── transactionModel.js
+│   │   ├── userModel.js
 │   │
 │   ├── server.js
+│   ├── app.js
 │   └── package.json
 │
 └── README.md
@@ -133,7 +143,7 @@ http://localhost:5173
 ```bash
 cd backend
 npm install
-npm start
+node server.js
 ```
 
 Backend runs on:
